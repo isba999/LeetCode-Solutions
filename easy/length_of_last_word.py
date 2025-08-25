@@ -4,7 +4,7 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        splitted_s = s.split()
+        splitted_s = s.split() # split() returns directly the words in a string
         
         return len(splitted_s[-1])
 
