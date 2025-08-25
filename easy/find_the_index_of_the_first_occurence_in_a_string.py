@@ -7,10 +7,9 @@ class Solution(object):
         """
         
         # sliding window comparison
-        for i in range(len(haystack)-len(needle)):
+        for i in range(len(haystack)-len(needle)-1):
             if haystack[i:i+len(needle)] == needle:
                 return i
-                break
         return -1
 
 solution = Solution()
